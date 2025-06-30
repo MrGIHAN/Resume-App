@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import DashboardPage from './pages/ DashboardPage'; // Updated path
+import Editor from './components/editor/Editor'; // Updated path
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
-import DashboardPage from './pages/DashboardPage';
-import EditorPage from './pages/EditorPage';
 import PrivateRoute from './components/layout/PrivateRoute';
 import Navbar from './components/layout/Navbar';
 
@@ -25,7 +25,7 @@ function App() {
               } />
               <Route path="/editor/:id?" element={
                 <PrivateRoute>
-                  <EditorPage />
+                  <Editor />
                 </PrivateRoute>
               } />
             </Routes>

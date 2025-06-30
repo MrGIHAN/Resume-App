@@ -1,6 +1,7 @@
+// client/postcss.config.js
 module.exports = {
   plugins: {
-    tailwindcss: {},   // Directly use tailwindcss (no @ prefix)
+    tailwindcss: {},
     autoprefixer: {},
-  }
+  },
 }

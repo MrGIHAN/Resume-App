@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { format } from 'date-fns';
+import { format } from 'date-fns'; // Fixed import
 import { TrashIcon, PencilIcon } from '@heroicons/react/24/outline';
 import { deleteResume } from '../../services/resumeService';
 
